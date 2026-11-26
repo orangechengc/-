@@ -1,0 +1,1294 @@
+{
+  "source": "https://github.com/XinQijj/ContestAggregation",
+  "contests": [
+    {
+      "id": "1-1",
+      "name": "中国国际大学生创新大赛",
+      "tier": 1,
+      "dept": "创新创业学院",
+      "reg": [
+        4,
+        8
+      ],
+      "url": "https://cy.ncss.cn",
+      "robot": "相关",
+      "keyword": "中国国际大学生创新大赛 金奖"
+    },
+    {
+      "id": "1-2",
+      "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "tier": 1,
+      "dept": "创新创业学院、团委",
+      "reg": [
+        11,
+        3
+      ],
+      "url": "https://www.tiaozhanbei.net",
+      "robot": "相关",
+      "keyword": "挑战杯 大挑 特等奖"
+    },
+    {
+      "id": "1-3",
+      "name": "“挑战杯”中国大学生创业计划大赛",
+      "tier": 1,
+      "dept": "创新创业学院、团委",
+      "reg": [
+        11,
+        3
+      ],
+      "url": "https://www.tiaozhanbei.net",
+      "robot": "相关",
+      "keyword": "挑战杯 创业计划 小挑 金奖"
+    },
+    {
+      "id": "1-4",
+      "name": "ACM-ICPC国际大学生程序设计竞赛",
+      "tier": 1,
+      "dept": "计算与智能创新学院",
+      "reg": [
+        9,
+        10
+      ],
+      "url": "https://icpc.global",
+      "robot": "相关",
+      "keyword": "ICPC regional 经验"
+    },
+    {
+      "id": "1-5",
+      "name": "全国大学生信息安全竞赛",
+      "tier": 1,
+      "dept": "计算与智能创新学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "http://www.ciscn.cn",
+      "robot": "",
+      "keyword": "CISCN 信息安全竞赛 writeup"
+    },
+    {
+      "id": "1-6",
+      "name": "全国大学生计算机系统能力大赛（CPU/编译/OS内核/数据库）",
+      "tier": 1,
+      "dept": "计算与智能创新学院",
+      "reg": [
+        2,
+        5
+      ],
+      "url": "https://os.educg.net",
+      "robot": "相关",
+      "keyword": "系统能力大赛 OS内核 CPU设计 龙芯杯"
+    },
+    {
+      "id": "1-7",
+      "name": "全国大学生数学建模竞赛",
+      "tier": 1,
+      "dept": "数学科学学院",
+      "reg": [
+        6,
+        8
+      ],
+      "url": "http://www.mcm.edu.cn",
+      "robot": "相关",
+      "keyword": "数学建模国赛 国一 论文"
+    },
+    {
+      "id": "1-8",
+      "name": "全国大学生电子设计竞赛（含专题邀请赛）",
+      "tier": 1,
+      "dept": "未来信息创新学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "https://www.nuedc-training.com.cn",
+      "robot": "相关",
+      "keyword": "电赛 国一 方案"
+    },
+    {
+      "id": "1-9",
+      "name": "全国大学生光电设计竞赛",
+      "tier": 1,
+      "dept": "未来信息创新学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "光电设计竞赛 经验"
+    },
+    {
+      "id": "1-10",
+      "name": "全国大学生广告艺术大赛（大广赛）",
+      "tier": 1,
+      "dept": "新闻学院",
+      "reg": [
+        11,
+        3
+      ],
+      "url": "http://www.sun-ada.net",
+      "robot": "",
+      "keyword": "大广赛 获奖作品"
+    },
+    {
+      "id": "1-11",
+      "name": "“外研社・国才杯”“理解当代中国”全国大学生外语能力大赛",
+      "tier": 1,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        9
+      ],
+      "url": "https://uchallenge.unipus.cn",
+      "robot": "",
+      "keyword": "国才杯 演讲 写作 阅读 经验"
+    },
+    {
+      "id": "1-12",
+      "name": "中国日报社“21世纪杯”全国英语演讲比赛",
+      "tier": 1,
+      "dept": "外国语言文学学院",
+      "reg": [
+        9,
+        10
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "21世纪杯 英语演讲 冠军"
+    },
+    {
+      "id": "1-13",
+      "name": "“外教社杯”全国高校学生跨文化能力大赛",
+      "tier": 1,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "外教社杯 跨文化能力大赛"
+    },
+    {
+      "id": "1-14",
+      "name": "全国大学生集成电路创新创业大赛",
+      "tier": 1,
+      "dept": "集成电路与微纳电子创新学院",
+      "reg": [
+        2,
+        4
+      ],
+      "url": "http://univ.ciciec.com",
+      "robot": "相关",
+      "keyword": "集创赛 方案 经验"
+    },
+    {
+      "id": "1-15",
+      "name": "全国周培源大学生力学竞赛",
+      "tier": 1,
+      "dept": "智能机器人与先进制造创新学院",
+      "reg": [
+        3,
+        4
+      ],
+      "url": "",
+      "robot": "推荐",
+      "keyword": "周培源力学竞赛 备考"
+    },
+    {
+      "id": "1-16",
+      "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+      "tier": 1,
+      "dept": "智能机器人与先进制造创新学院",
+      "reg": [
+        10,
+        12
+      ],
+      "url": "https://dasai.lanqiao.cn",
+      "robot": "推荐",
+      "keyword": "蓝桥杯 省一 国一 经验"
+    },
+    {
+      "id": "1-17",
+      "name": "中国高校计算机大赛",
+      "tier": 1,
+      "dept": "智能机器人与先进制造创新学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "http://www.c4best.cn",
+      "robot": "推荐",
+      "keyword": "中国高校计算机大赛 团体程序设计天梯赛 网络技术挑战赛"
+    },
+    {
+      "id": "1-18",
+      "name": "中国机器人及人工智能大赛",
+      "tier": 1,
+      "dept": "智能机器人与先进制造创新学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "推荐",
+      "keyword": "中国机器人及人工智能大赛 经验"
+    },
+    {
+      "id": "1-19",
+      "name": "全国大学生生命科学竞赛（CULSC）",
+      "tier": 1,
+      "dept": "生命科学学院",
+      "reg": [
+        12,
+        3
+      ],
+      "url": "https://culsc.cn",
+      "robot": "",
+      "keyword": "全国大学生生命科学竞赛 CULSC"
+    },
+    {
+      "id": "1-20",
+      "name": "全国大学生物理实验竞赛",
+      "tier": 1,
+      "dept": "物理学系",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国大学生物理实验竞赛 一等奖"
+    },
+    {
+      "id": "1-21",
+      "name": "全国大学生化学实验创新设计大赛",
+      "tier": 1,
+      "dept": "化学系",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "化学实验创新设计大赛"
+    },
+    {
+      "id": "1-22",
+      "name": "全国本科院校税收风险管控案例大赛",
+      "tier": 1,
+      "dept": "经济学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "税收风险管控案例大赛"
+    },
+    {
+      "id": "1-23",
+      "name": "全国大学生金相技能大赛",
+      "tier": 1,
+      "dept": "智能材料与未来能源创新学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "金相技能大赛"
+    },
+    {
+      "id": "1-24",
+      "name": "中国大学生机械工程创新创意大赛",
+      "tier": 1,
+      "dept": "智能材料与未来能源创新学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "相关",
+      "keyword": "机械工程创新创意大赛 过程装备 智能制造"
+    },
+    {
+      "id": "1-25",
+      "name": "全国大学生机器人大赛RoboMaster",
+      "tier": 1,
+      "dept": "未来信息创新学院",
+      "reg": [
+        10,
+        11
+      ],
+      "url": "https://www.robomaster.com",
+      "robot": "相关",
+      "keyword": "RoboMaster 开源 步兵 视觉 电控"
+    },
+    {
+      "id": "1-26",
+      "name": "全国大学生机器人大赛RoboCon",
+      "tier": 1,
+      "dept": "智能机器人与先进制造创新学院",
+      "reg": [
+        9,
+        10
+      ],
+      "url": "https://www.cnrobocon.net",
+      "robot": "推荐",
+      "keyword": "Robocon 全国大学生机器人大赛 方案"
+    },
+    {
+      "id": "1-27",
+      "name": "中国机器人大赛暨RoboCup机器人世界杯中国赛",
+      "tier": 1,
+      "dept": "未来信息创新学院",
+      "reg": [
+        6,
+        9
+      ],
+      "url": "",
+      "robot": "相关",
+      "keyword": "RoboCup 中国赛 机器人大赛 经验"
+    },
+    {
+      "id": "1-28",
+      "name": "中国大学生工程实践与创新能力大赛",
+      "tier": 1,
+      "dept": "未来信息创新学院",
+      "reg": [
+        10,
+        3
+      ],
+      "url": "http://www.gcxl.edu.cn",
+      "robot": "相关",
+      "keyword": "工程实践与创新能力大赛 工创赛 物流搬运"
+    },
+    {
+      "id": "1-29",
+      "name": "全国大学生嵌入式芯片与系统设计竞赛",
+      "tier": 1,
+      "dept": "生物医学工程与技术创新学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "相关",
+      "keyword": "嵌入式芯片与系统设计竞赛 方案"
+    },
+    {
+      "id": "1-30",
+      "name": "中国大学生医学技术技能大赛（多赛道）",
+      "tier": 1,
+      "dept": "公共卫生学院、中山/华山临床医学院、护理学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "中国大学生医学技术技能大赛"
+    },
+    {
+      "id": "1-31",
+      "name": "全国大学生医学创新大赛暨“一带一路”国际竞赛",
+      "tier": 1,
+      "dept": "口腔医学院、法医学与法庭科学学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国大学生医学创新大赛"
+    },
+    {
+      "id": "1-32",
+      "name": "全国大学生创新发明大赛（口腔医学临床技能挑战赛赛道）",
+      "tier": 1,
+      "dept": "口腔医学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "口腔医学临床技能挑战赛"
+    },
+    {
+      "id": "2-1",
+      "name": "史学新秀奖",
+      "tier": 2,
+      "dept": "历史学系",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "史学新秀奖"
+    },
+    {
+      "id": "2-2",
+      "name": "全国高校德语专业大学生德语辩论赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "德语辩论赛"
+    },
+    {
+      "id": "2-3",
+      "name": "全国高校德语专业本科生学术创新大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "德语专业本科生学术创新大赛"
+    },
+    {
+      "id": "2-4",
+      "name": "全国高校专业俄语语言文化知识大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "专业俄语语言文化知识大赛"
+    },
+    {
+      "id": "2-5",
+      "name": "韩素音国际翻译大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        1,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "韩素音国际翻译大赛 获奖译文"
+    },
+    {
+      "id": "2-6",
+      "name": "“珠峰杯”中国大学生韩国语短视频大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "珠峰杯 韩国语短视频"
+    },
+    {
+      "id": "2-7",
+      "name": "“外教社杯”全国高校法语演讲比赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "外教社杯 法语演讲"
+    },
+    {
+      "id": "2-8",
+      "name": "中法环境月法语演讲大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        4,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "中法环境月 法语演讲"
+    },
+    {
+      "id": "2-9",
+      "name": "全国口译大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国口译大赛 经验"
+    },
+    {
+      "id": "2-10",
+      "name": "“CATTI杯”全国翻译大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        7,
+        10
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "CATTI杯 全国翻译大赛"
+    },
+    {
+      "id": "2-11",
+      "name": "笹川杯日本研究论文大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "笹川杯 日本研究论文"
+    },
+    {
+      "id": "2-12",
+      "name": "中华全国日语演讲大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        9,
+        11
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "中华全国日语演讲大赛"
+    },
+    {
+      "id": "2-13",
+      "name": "“俄罗斯文艺”文学翻译奖：全球俄汉互译大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "俄罗斯文艺 俄汉互译大赛"
+    },
+    {
+      "id": "2-14",
+      "name": "“华澳杯”全国大学生区域国别知识英语大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "华澳杯 区域国别知识英语大赛"
+    },
+    {
+      "id": "2-15",
+      "name": "“外教社·词达人杯”全国大学生英语词汇能力大赛",
+      "tier": 2,
+      "dept": "外国语言文学学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "词达人杯 英语词汇"
+    },
+    {
+      "id": "2-16",
+      "name": "全国大学生评论大赛",
+      "tier": 2,
+      "dept": "新闻学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国大学生评论大赛"
+    },
+    {
+      "id": "2-17",
+      "name": "中国数据新闻大赛",
+      "tier": 2,
+      "dept": "新闻学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "中国数据新闻大赛 获奖作品"
+    },
+    {
+      "id": "2-18",
+      "name": "中国高校影视学会影视作品推优活动（学生组）",
+      "tier": 2,
+      "dept": "新闻学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "中国高校影视学会 学生作品推优"
+    },
+    {
+      "id": "2-19",
+      "name": "中国大学生电视节“大学生原创影像作品”展映活动",
+      "tier": 2,
+      "dept": "新闻学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "中国大学生电视节 原创影像"
+    },
+    {
+      "id": "2-20",
+      "name": "中国大学生广告艺术节学院奖（学院奖）",
+      "tier": 2,
+      "dept": "新闻学院",
+      "reg": [
+        9,
+        4
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "广告艺术节学院奖 获奖作品"
+    },
+    {
+      "id": "2-21",
+      "name": "中国大学生公共关系策划大赛",
+      "tier": 2,
+      "dept": "新闻学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "中国大学生公共关系策划大赛"
+    },
+    {
+      "id": "2-22",
+      "name": "强东杯高校社会学知识竞赛全国邀请赛",
+      "tier": 2,
+      "dept": "社会发展与公共政策学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "强东杯 社会学知识竞赛"
+    },
+    {
+      "id": "2-23",
+      "name": "全国高校心理学专业本科生创新创业论坛",
+      "tier": 2,
+      "dept": "社会发展与公共政策学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "心理学专业本科生创新创业论坛"
+    },
+    {
+      "id": "2-24",
+      "name": "“贸仲杯”国际商事仲裁模拟仲裁庭辩论赛",
+      "tier": 2,
+      "dept": "法学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "贸仲杯 模拟仲裁庭"
+    },
+    {
+      "id": "2-25",
+      "name": "“杰赛普”（Jessup）国际法模拟法庭中国赛区选拔赛",
+      "tier": 2,
+      "dept": "法学院",
+      "reg": [
+        9,
+        11
+      ],
+      "url": "https://www.ilsa.org/jessup",
+      "robot": "",
+      "keyword": "Jessup 模拟法庭 中国赛区"
+    },
+    {
+      "id": "2-26",
+      "name": "全球大学生风险管理案例比赛（Spencer-RIMS）",
+      "tier": 2,
+      "dept": "经济学院",
+      "reg": [
+        9,
+        12
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "Spencer RIMS Risk Management Challenge"
+    },
+    {
+      "id": "2-27",
+      "name": "CFA全球研究挑战赛（CFA Institute Research Challenge）",
+      "tier": 2,
+      "dept": "经济学院",
+      "reg": [
+        8,
+        10
+      ],
+      "url": "https://www.cfainstitute.org/societies/challenge",
+      "robot": "",
+      "keyword": "CFA Research Challenge 经验"
+    },
+    {
+      "id": "2-28",
+      "name": "丘成桐大学生数学竞赛",
+      "tier": 2,
+      "dept": "数学科学学院",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "相关",
+      "keyword": "丘成桐大学生数学竞赛 备考"
+    },
+    {
+      "id": "2-29",
+      "name": "全国大学生数学竞赛",
+      "tier": 2,
+      "dept": "数学科学学院",
+      "reg": [
+        8,
+        9
+      ],
+      "url": "http://www.cmathc.org.cn",
+      "robot": "相关",
+      "keyword": "全国大学生数学竞赛 非数类 备考"
+    },
+    {
+      "id": "2-30",
+      "name": "中国大学生物理学术竞赛",
+      "tier": 2,
+      "dept": "物理学系",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "CUPT 物理学术竞赛"
+    },
+    {
+      "id": "2-31",
+      "name": "全国大学生化学实验竞赛",
+      "tier": 2,
+      "dept": "化学系",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国大学生化学实验竞赛"
+    },
+    {
+      "id": "2-32",
+      "name": "国际遗传工程机器大赛（iGEM）",
+      "tier": 2,
+      "dept": "生命科学学院",
+      "reg": [
+        1,
+        4
+      ],
+      "url": "https://igem.org",
+      "robot": "",
+      "keyword": "iGEM wiki 金奖"
+    },
+    {
+      "id": "2-33",
+      "name": "全国环境友好科技竞赛",
+      "tier": 2,
+      "dept": "环境科学与工程系",
+      "reg": [
+        3,
+        5
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国环境友好科技竞赛"
+    },
+    {
+      "id": "2-34",
+      "name": "全国大学生海洋知识竞赛",
+      "tier": 2,
+      "dept": "大气与海洋科学系",
+      "reg": [
+        4,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国大学生海洋知识竞赛"
+    },
+    {
+      "id": "2-35",
+      "name": "全国气象科普讲解大赛",
+      "tier": 2,
+      "dept": "大气与海洋科学系",
+      "reg": [
+        4,
+        7
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "气象科普讲解大赛"
+    },
+    {
+      "id": "2-36",
+      "name": "全国大学生气象科技知识竞赛",
+      "tier": 2,
+      "dept": "大气与海洋科学系",
+      "reg": [
+        4,
+        7
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国大学生气象科技知识竞赛"
+    },
+    {
+      "id": "2-37",
+      "name": "全国未来飞行器设计大赛",
+      "tier": 2,
+      "dept": "智能机器人与先进制造创新学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "推荐",
+      "keyword": "未来飞行器设计大赛 无人机"
+    },
+    {
+      "id": "2-38",
+      "name": "中国教育机器人大赛",
+      "tier": 2,
+      "dept": "智能机器人与先进制造创新学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "推荐",
+      "keyword": "中国教育机器人大赛 经验"
+    },
+    {
+      "id": "2-39",
+      "name": "“兴智杯”全国人工智能创新应用大赛",
+      "tier": 2,
+      "dept": "智能机器人与先进制造创新学院",
+      "reg": [
+        5,
+        8
+      ],
+      "url": "",
+      "robot": "推荐",
+      "keyword": "兴智杯 人工智能创新应用大赛"
+    },
+    {
+      "id": "2-40",
+      "name": "全国高校学生课外“核+X”创意大赛",
+      "tier": 2,
+      "dept": "核科学与技术系",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "核+X 创意大赛"
+    },
+    {
+      "id": "2-41",
+      "name": "全国大学生生物医学工程创新设计竞赛",
+      "tier": 2,
+      "dept": "生物医学工程与技术创新学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "生物医学工程创新设计竞赛"
+    },
+    {
+      "id": "2-42",
+      "name": "全国大学生软件创新大赛",
+      "tier": 2,
+      "dept": "计算与智能创新学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "相关",
+      "keyword": "全国大学生软件创新大赛"
+    },
+    {
+      "id": "2-43",
+      "name": "“强网杯”全国网络安全挑战赛",
+      "tier": 2,
+      "dept": "计算与智能创新学院",
+      "reg": [
+        7,
+        9
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "强网杯 writeup"
+    },
+    {
+      "id": "2-44",
+      "name": "CCPC中国大学生程序设计竞赛总决赛",
+      "tier": 2,
+      "dept": "计算与智能创新学院",
+      "reg": [
+        9,
+        10
+      ],
+      "url": "https://ccpc.io",
+      "robot": "相关",
+      "keyword": "CCPC 题解 经验"
+    },
+    {
+      "id": "2-45",
+      "name": "全国高校大学生讲思政课公开课展示",
+      "tier": 2,
+      "dept": "马克思主义学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "大学生讲思政课 公开课展示"
+    },
+    {
+      "id": "2-46",
+      "name": "发现中国李济考古学奖学金",
+      "tier": 2,
+      "dept": "文物与博物馆学系",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "李济考古学奖学金"
+    },
+    {
+      "id": "2-47",
+      "name": "全国人工智能应用场景创新挑战赛",
+      "tier": 2,
+      "dept": "旅游学系",
+      "reg": [
+        4,
+        8
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "人工智能应用场景创新挑战赛"
+    },
+    {
+      "id": "2-48",
+      "name": "中国大学文商旅经营与策划虚拟仿真大赛",
+      "tier": 2,
+      "dept": "旅游学系",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "文商旅经营与策划虚拟仿真大赛"
+    },
+    {
+      "id": "2-49",
+      "name": "青年全球治理创新设计大赛（含澜湄区域专项）",
+      "tier": 2,
+      "dept": "国际关系与公共事务学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "青年全球治理创新设计大赛"
+    },
+    {
+      "id": "2-50",
+      "name": "“中国之治”全国大学生治理案例分析大赛",
+      "tier": 2,
+      "dept": "国际关系与公共事务学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "中国之治 治理案例分析大赛"
+    },
+    {
+      "id": "2-51",
+      "name": "“厚粲杯”全国大学生心理与认知智能测评挑战赛",
+      "tier": 2,
+      "dept": "社会发展与公共政策学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "厚粲杯 心理与认知智能测评"
+    },
+    {
+      "id": "2-52",
+      "name": "复微杯大学生电子设计大赛",
+      "tier": 2,
+      "dept": "集成电路与微纳电子创新学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "复微杯 电子设计大赛"
+    },
+    {
+      "id": "2-53",
+      "name": "集成芯片和芯粒技术开源社区大赛",
+      "tier": 2,
+      "dept": "集成电路与微纳电子创新学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "芯粒 Chiplet 开源社区大赛"
+    },
+    {
+      "id": "2-54",
+      "name": "全国法医学本科技能竞赛",
+      "tier": 2,
+      "dept": "法医学与法庭科学学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国法医学本科技能竞赛"
+    },
+    {
+      "id": "2-55",
+      "name": "医学院国际生理学知识竞赛（IMSPQ）",
+      "tier": 2,
+      "dept": "中山临床医学院、华山临床医学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "IMSPQ 生理学知识竞赛"
+    },
+    {
+      "id": "2-56",
+      "name": "来华医学留学生临床思维与技能竞赛",
+      "tier": 2,
+      "dept": "中山临床医学院、华山临床医学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "来华医学留学生 临床思维与技能竞赛"
+    },
+    {
+      "id": "2-57",
+      "name": "中华护理学会学生工作委员会创新创业论坛",
+      "tier": 2,
+      "dept": "护理学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "中华护理学会 学生创新创业论坛"
+    },
+    {
+      "id": "2-58",
+      "name": "全国大学生药苑论坛",
+      "tier": 2,
+      "dept": "药学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国大学生药苑论坛"
+    },
+    {
+      "id": "2-59",
+      "name": "全国医药院校药学/中药学专业大学生实验技能大赛",
+      "tier": 2,
+      "dept": "药学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "药学 中药学 实验技能大赛"
+    },
+    {
+      "id": "2-60",
+      "name": "全国大学生健康科普大赛",
+      "tier": 2,
+      "dept": "公共卫生学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国大学生健康科普大赛"
+    },
+    {
+      "id": "2-61",
+      "name": "教育部基础医学“101计划”拔尖学生创新论坛",
+      "tier": 2,
+      "dept": "基础医学院",
+      "reg": [
+        3,
+        6
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "基础医学101计划 拔尖学生创新论坛"
+    },
+    {
+      "id": "2-62",
+      "name": "全国大学生职业规划大赛",
+      "tier": 2,
+      "dept": "就业指导与生涯发展处",
+      "reg": [
+        9,
+        12
+      ],
+      "url": "",
+      "robot": "",
+      "keyword": "全国大学生职业规划大赛 经验"
+    }
+  ],
+  "organizers": [
+    {
+      "name": "Microsoft Imagine Cup",
+      "url": "https://imaginecup.microsoft.com",
+      "org": "微软"
+    },
+    {
+      "name": "Google Solution Challenge / GDG 黑客松",
+      "url": "https://developers.google.com/community/gdsc-solution-challenge",
+      "org": "Google"
+    },
+    {
+      "name": "NVIDIA 开发者黑客松 / GTC 活动",
+      "url": "https://developer.nvidia.com/hackathons-and-bootcamps",
+      "org": "NVIDIA"
+    },
+    {
+      "name": "AWS 黑客松（Devpost）",
+      "url": "https://aws.amazon.com/developer/community/hackathons/",
+      "org": "Amazon"
+    },
+    {
+      "name": "Meta Llama Impact Hackathon",
+      "url": "https://www.llama.com/",
+      "org": "Meta"
+    },
+    {
+      "name": "飞桨黑客松 PaddlePaddle Hackathon",
+      "url": "https://www.paddlepaddle.org.cn/",
+      "org": "百度"
+    },
+    {
+      "name": "阿里云天池大赛",
+      "url": "https://tianchi.aliyun.com/competition",
+      "org": "阿里巴巴"
+    },
+    {
+      "name": "腾讯犀牛鸟开源 / 腾讯黑客松",
+      "url": "https://opensource.tencent.com/",
+      "org": "腾讯"
+    },
+    {
+      "name": "华为ICT大赛 / 华为开发者大赛",
+      "url": "https://e.huawei.com/cn/talent/ict-academy/#/ict-contest",
+      "org": "华为"
+    },
+    {
+      "name": "字节跳动 青训营 / 火山引擎黑客松",
+      "url": "https://www.volcengine.com/",
+      "org": "字节跳动"
+    },
+    {
+      "name": "Intel / AMD 开发者挑战赛",
+      "url": "https://www.hackster.io/contests",
+      "org": "Intel / AMD"
+    },
+    {
+      "name": "ETHGlobal 黑客松",
+      "url": "https://ethglobal.com/events",
+      "org": "ETHGlobal"
+    },
+    {
+      "name": "MLH（Major League Hacking）学生黑客松",
+      "url": "https://mlh.io/seasons/2027/events",
+      "org": "MLH"
+    }
+  ]
+}

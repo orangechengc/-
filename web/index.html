@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#123e35">
+  <title>赛历 · 高校竞赛指南</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" type="module"></script>
+</head>
+<body>
+  <header><div class="mast"><a class="brand" href="./"><i aria-hidden="true">◫</i> 赛历</a><span>高校竞赛指南</span></div></header>
+  <main>
+    <section class="cover" aria-labelledby="cover-title">
+      <div><h1 id="cover-title">竞赛日历</h1><p>查找复旦竞赛目录、往年报名月份及黑客松活动。</p>
+        <div class="totals" id="totals"></div>
+      </div>
+      <div class="calendar" id="calendar" aria-hidden="true"></div>
+    </section>
+    <nav class="views" aria-label="浏览方式">
+      <a href="#catalog" data-view="catalog">竞赛目录</a><a href="#timeline" data-view="timeline">报名时间</a><a href="#hackathons" data-view="hackathons">黑客松</a>
+    </nav>
+    <section class="tools" aria-label="筛选条件">
+      <label class="search"><span aria-hidden="true">⌕</span><input id="query" type="search" aria-label="搜索" placeholder="搜索比赛、院系或编号"></label>
+      <label id="tier-control"><span class="sr">竞赛类别</span><select id="tier"><option value="">全部类别</option><option value="1">一类竞赛</option><option value="2">二类竞赛</option></select></label>
+      <label id="robot-control"><input id="robot" type="checkbox"> 机器人学院相关</label>
+    </section>
+    <p id="status" role="status">正在载入目录…</p>
+    <div id="results"></div>
+    <noscript>请启用 JavaScript 查看比赛目录。</noscript>
+    <footer><span>报名月份参考往年安排，实际日期及加分规则以当年官方通知为准。</span>
+      <a href="https://github.com/XinQijj/ContestAggregation">初始目录来源</a></footer>
+  </main>
+  <dialog id="detail" aria-labelledby="detail-name"><button id="close" aria-label="关闭详情" autofocus>×</button><div id="body"></div></dialog>
+</body>
+</html>
