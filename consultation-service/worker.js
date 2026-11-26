@@ -28,41 +28,91 @@ async function form(request) {
   }
   return new URLSearchParams(body + decoder.decode());
 }
+function page(items) {
+  return json({items:items.slice(0, SIZE), more:items.length > SIZE});
+}
+async function readDiscussion(db, url) {
+  if (url.pathname === "/api/replies") {
+    const thread = Number(url.searchParams.get("thread"));
+    const before = Number(url.searchParams.get("before") || Number.MAX_SAFE_INTEGER);
+    const rows = await db.prepare(`
+      SELECT r.id, r.body, r.created FROM replies r
+      JOIN questions q ON q.id=r.question_id AND q.state='published'
+      WHERE r.question_id=? AND r.id<? ORDER BY r.id DESC LIMIT ?
+    `).bind(thread, before, SIZE+1).all();
+    return page(rows.results);
+  }
+  const term = (url.searchParams.get("q") || "").trim().slice(0,120);
+  const offset = (pageNumber(url)-1)*SIZE;
+  if (url.pathname === "/api/questions") {
+    // Older pages promise that questions stay private until the owner replies.
+    const rows = await db.prepare("SELECT id,topic,question,answer,updated FROM questions WHERE state='published' AND answer<>'' AND instr(lower(topic||' '||question||' '||answer),lower(?))>0 ORDER BY updated DESC,id DESC LIMIT ? OFFSET ?")
+      .bind(term,SIZE+1,offset).all();
+    return page(rows.results);
+  }
+  const rows = await db.prepare(`
+    SELECT q.id, q.topic, q.question, q.answer, q.created, q.updated,
+      (SELECT count(*) FROM replies r WHERE r.question_id=q.id) AS replyCount
+    FROM questions q WHERE q.state='published' AND (
+      instr(lower(q.topic||' '||q.question||' '||q.answer),lower(?))>0 OR
+      EXISTS (SELECT 1 FROM replies r WHERE r.question_id=q.id AND instr(lower(r.body),lower(?))>0)
+    ) ORDER BY q.id DESC LIMIT ? OFFSET ?
+  `).bind(term,term,SIZE+1,offset).all();
+  return page(rows.results);
+}
+
 async function publicApi(request, url, env) {
   const db = env.DB;
-  if (request.method === "GET" && url.pathname === "/api/questions") {
-    const q = (url.searchParams.get("q") || "").trim().slice(0, 120);
-    const offset = (pageNumber(url) - 1) * SIZE;
-    const {results} = await db.prepare(
-      "SELECT id, topic, question, answer, updated FROM questions WHERE state='published' AND instr(lower(topic || ' ' || question || ' ' || answer),lower(?)) > 0 ORDER BY updated DESC,id DESC LIMIT ? OFFSET ?"
-    ).bind(q, SIZE + 1, offset).all();
-    return json({items:results.slice(0,SIZE), more:results.length>SIZE});
-  }
-  if (request.method !== "POST" || !["/api/questions","/api/withdraw"].includes(url.pathname)) return json({error:"接口不存在。"},404);
+  const path = url.pathname;
+  const collections = ["/api/questions", "/api/comments", "/api/replies"];
+  if (request.method === "GET" && collections.includes(path)) return readDiscussion(db,url);
+  if (request.method !== "POST" || ![...collections,"/api/withdraw","/api/withdraw-reply"].includes(path)) return json({error:"接口不存在。"},404);
   if (request.headers.get("Origin") !== ORIGIN) return json({error:"请从赛历页面提交。"},403);
   const data = await form(request);
   const receipt = data?.get("receipt") || "";
   if (!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(receipt)) return json({error:"请求格式无效，请刷新重试。"},400);
-  if (url.pathname === "/api/withdraw") {
-    const result = await db.prepare("DELETE FROM questions WHERE receipt=? AND state='pending'").bind(receipt).run();
-    return result.meta.changes ? json({ok:true}) : json({error:"问题已处理或已撤回。"},409);
+  if (path === "/api/withdraw-reply") {
+    const result = await db.prepare("DELETE FROM replies WHERE receipt=?").bind(receipt).run();
+    return result.meta.changes ? json({ok:true}) : json({error:"回复已撤回或不存在。"},404);
   }
-  const question = input(data.get("question"),600);
+  if (path === "/api/withdraw") {
+    const result = await db.prepare(`
+      DELETE FROM questions WHERE receipt=? AND state IN ('pending','published') AND answer=''
+      AND NOT EXISTS (SELECT 1 FROM replies WHERE question_id=questions.id)
+    `).bind(receipt).run();
+    return result.meta.changes ? json({ok:true}) : json({error:"留言已有回复、已归档或已撤回。"},409);
+  }
+  const isReply = path === "/api/replies";
+  const body = input(data.get(isReply ? "body" : "question"),600);
   const topic = input(data.get("topic") || "",100);
-  if (!question || question.length < 4 || topic === null || data.get("website")) return json({error:"请填写 4–600 字的问题，比赛名称最多 100 字。"},400);
-  const client = request.headers.get("CF-Connecting-IP") || "shared";
-  const hash = await crypto.subtle.digest("SHA-256",new TextEncoder().encode([env.RATE_SALT,new Date().toISOString().slice(0,13),client].join("|")));
-  const bucket = Array.from(new Uint8Array(hash), b => b.toString(16).padStart(2,"0")).join("");
-  const result = await db.prepare("INSERT INTO questions(receipt,topic,question,bucket) SELECT ?,?,?,? WHERE (SELECT count(*) FROM questions WHERE bucket=?) < ? ON CONFLICT(receipt) DO NOTHING")
-    .bind(receipt,topic,question,bucket,bucket,client === "shared" ? 120 : 8).run();
-  if (!result.meta.changes) {
-    const previous = await db.prepare("SELECT question,topic FROM questions WHERE receipt=?").bind(receipt).first();
-    if (!previous) return json({error:"本小时提交次数较多，请稍后再试。"},429);
-    if (previous.question !== question || previous.topic !== topic) return json({error:"这次提问已提交，请刷新后另提新问题。"},409);
+  const thread = Number(data.get("thread"));
+  if (!body || topic===null || data.get("website") || (isReply && (!Number.isSafeInteger(thread) || thread<1))) {
+    return json({error:"请填写 1–600 字的内容，比赛名称最多 100 字。"},400);
   }
-  return json({ok:true},201);
+  const client = request.headers.get("CF-Connecting-IP") || "shared";
+  const hour = new Date().toISOString().slice(0,13);
+  const hash = await crypto.subtle.digest("SHA-256",new TextEncoder().encode([env.RATE_SALT,hour,client].join("|")));
+  const bucket = Array.from(new Uint8Array(hash), b => b.toString(16).padStart(2,"0")).join("");
+  const quota = "(SELECT count(*) FROM questions WHERE bucket=?) + (SELECT count(*) FROM replies WHERE bucket=?) < ?";
+  const limits = [bucket,bucket,client === "shared" ? 120 : 20];
+  let existing;
+  if (isReply) {
+    const result = await db.prepare(`INSERT INTO replies(question_id,receipt,body,bucket)
+      SELECT id,?,?,? FROM questions WHERE id=? AND state='published' AND ${quota}
+      ON CONFLICT(receipt) DO NOTHING RETURNING id`).bind(receipt,body,bucket,thread,...limits).first();
+    if (result) return json({ok:true,id:result.id},201);
+    if (!await db.prepare("SELECT id FROM questions WHERE id=? AND state='published'").bind(thread).first()) return json({error:"这条留言已不可见。"},404);
+    existing = await db.prepare("SELECT id FROM replies WHERE receipt=? AND question_id=? AND body=?").bind(receipt,thread,body).first();
+  } else {
+    const state = path === "/api/comments" ? "published" : "pending";
+    const result = await db.prepare(`INSERT INTO questions(receipt,topic,question,bucket,state)
+      SELECT ?,?,?,?,? WHERE ${quota} ON CONFLICT(receipt) DO NOTHING RETURNING id`)
+      .bind(receipt,topic,body,bucket,state,...limits).first();
+    if (result) return json({ok:true,id:result.id},201);
+    existing = await db.prepare("SELECT id FROM questions WHERE receipt=? AND topic=? AND question=?").bind(receipt,topic,body).first();
+  }
+  return existing ? json({ok:true,id:existing.id},201) : json({error:"提交次数较多，请稍后再试。"},429);
 }
-
 function html(content, status=200) {
   const body = '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>橙橙成 · 问答管理</title><style>body{max-width:48rem;margin:2rem auto;padding:0 1rem;font:16px/1.6 system-ui;color:#293826;background:#fcfbf7}a{color:#326041}article{padding:1rem 1.25rem;margin:1rem 0;border:1px solid #deded4;border-radius:12px;background:white}p{white-space:pre-wrap;overflow-wrap:anywhere}textarea{box-sizing:border-box;width:100%;font:inherit;padding:.6rem}button{font:inherit;padding:.4rem .8rem;margin:.4rem .5rem 0 0;cursor:pointer}small{color:#586450}nav{display:flex;gap:1rem;flex-wrap:wrap}</style><main>'+content+'</main></html>';
   return new Response(body,{status,headers:{"Content-Type":"text/html; charset=utf-8","Cache-Control":"private, no-store","Referrer-Policy":"no-referrer","Content-Security-Policy":"default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; frame-ancestors 'none'; base-uri 'none'"}});

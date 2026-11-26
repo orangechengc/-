@@ -29,7 +29,7 @@
       </div>
     </section>
     <nav class="views" aria-label="浏览方式">
-      <a href="#catalog" data-view="catalog">竞赛目录</a><a href="#timeline" data-view="timeline">报名时间</a><a href="#hackathons" data-view="hackathons">黑客松</a><a href="#questions" data-view="questions">咨询问答</a>
+      <a href="#catalog" data-view="catalog">竞赛目录</a><a href="#timeline" data-view="timeline">报名时间</a><a href="#hackathons" data-view="hackathons">黑客松</a><a href="#questions" data-view="questions">留言讨论</a>
     </nav>
     <div id="browse">
     <section class="tools" aria-label="筛选条件">
@@ -42,29 +42,29 @@
     </div>
     <section id="questions" hidden aria-labelledby="qa-title">
       <div class="qa-heading">
-        <div><h2 id="qa-title">咨询问答</h2><p>找找其他同学问过什么，或匿名向橙橙成提问。</p></div>
-        <a id="qa-admin" class="repo-link">站主回复入口</a>
+        <div><h2 id="qa-title">留言讨论</h2><p>聊聊选赛、报名和组队。所有人都可以直接留言和回复。</p></div>
+        <a id="qa-admin" class="repo-link">站主管理</a>
       </div>
       <div class="qa-columns">
         <section class="qa-archive" aria-labelledby="archive-title">
-          <h3 id="archive-title">已回复的问题</h3>
-          <label class="search"><span aria-hidden="true"></span><input id="qa-search" type="search" maxlength="120" placeholder="搜索比赛、问题或答复" aria-label="搜索已回复的问题"></label>
+          <h3 id="archive-title">公开留言</h3>
+          <label class="search"><span aria-hidden="true"></span><input id="qa-search" type="search" maxlength="120" placeholder="搜索比赛、留言或回复" aria-label="搜索公开留言"></label>
           <p id="qa-status" class="meta" role="status"></p>
           <div id="qa-list"></div>
           <button id="qa-more" class="qa-secondary" type="button" hidden>查看更多</button>
           <button id="qa-retry" class="qa-secondary" type="button" hidden>重新加载</button>
         </section>
         <section class="qa-compose" aria-labelledby="ask-title">
-          <h3 id="ask-title">向橙橙成提问</h3>
+          <h3 id="ask-title">发表留言</h3>
           <form id="qa-form">
             <label>相关比赛（选填）<input name="topic" maxlength="100" placeholder="例如：全国大学生数学建模竞赛"></label>
-            <label>你的问题<textarea name="question" rows="4" minlength="4" maxlength="600" required placeholder="写下你在选赛、报名或组队时遇到的问题"></textarea></label>
+            <label>留言内容<textarea name="question" rows="4" maxlength="600" required placeholder="写下你在选赛、报名或组队时遇到的问题"></textarea></label>
             <input name="website" type="text" tabindex="-1" autocomplete="off" hidden aria-hidden="true">
-            <p class="meta">无需登录。站主回复后，问题和答复会公开展示。请勿填写手机号、学号等个人信息。</p>
-            <button class="qa-primary" type="submit">匿名提交</button>
+            <p class="meta">无需登录，发表后所有人都能看见。请勿留下手机号、学号等个人信息。</p>
+            <button class="qa-primary" type="submit">公开发表</button>
           </form>
           <p id="qa-feedback" role="status"></p>
-          <button id="qa-withdraw" class="qa-secondary" type="button" hidden>撤回上次提问</button>
+          <button id="qa-withdraw" class="qa-secondary" type="button" hidden>撤回上条留言</button>
         </section>
       </div>
     </section>
