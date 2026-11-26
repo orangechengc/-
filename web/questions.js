@@ -33,11 +33,17 @@ function button(label, cls="qa-secondary") {
 function questionItem(row) {
   const item = document.createElement("article");
   item.className = "qa-item";
-  const header = textElement("div","访客 · " + row.created.slice(0,10),"qa-byline");
+  const author = row.editorial ? "橙橙成整理" : "访客";
+  const header = textElement("div",author + " · " + row.created.slice(0,10),"qa-byline");
   item.append(header, textElement("p",row.question,"qa-message"));
   if (row.answer) {
     const owner = textElement("div","","qa-answer");
     owner.append(textElement("b","橙橙成答复"),textElement("p",row.answer));
+    if (row.source) {
+      const link = textElement("a",row.source.title);
+      link.href = row.source.url;
+      owner.append(link);
+    }
     item.append(owner);
   }
   const panel = document.createElement("details");
