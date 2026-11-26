@@ -29,8 +29,9 @@
       </div>
     </section>
     <nav class="views" aria-label="浏览方式">
-      <a href="#catalog" data-view="catalog">竞赛目录</a><a href="#timeline" data-view="timeline">报名时间</a><a href="#hackathons" data-view="hackathons">黑客松</a>
+      <a href="#catalog" data-view="catalog">竞赛目录</a><a href="#timeline" data-view="timeline">报名时间</a><a href="#hackathons" data-view="hackathons">黑客松</a><a href="#questions" data-view="questions">咨询问答</a>
     </nav>
+    <div id="browse">
     <section class="tools" aria-label="筛选条件">
       <label class="search"><span aria-hidden="true"></span><input id="query" type="search" aria-label="搜索" placeholder="搜索比赛、院系或编号"></label>
       <label id="tier-control"><span class="sr">竞赛类别</span><select id="tier"><option value="">全部类别</option><option value="1">一类竞赛</option><option value="2">二类竞赛</option></select></label>
@@ -38,6 +39,35 @@
     </section>
     <p id="status" role="status">正在载入目录…</p>
     <div id="results"></div>
+    </div>
+    <section id="questions" hidden aria-labelledby="qa-title">
+      <div class="qa-heading">
+        <div><h2 id="qa-title">咨询问答</h2><p>找找其他同学问过什么，或匿名向橙橙成提问。</p></div>
+        <a id="qa-admin" class="repo-link">站主回复入口</a>
+      </div>
+      <div class="qa-columns">
+        <section class="qa-archive" aria-labelledby="archive-title">
+          <h3 id="archive-title">已回复的问题</h3>
+          <label class="search"><span aria-hidden="true"></span><input id="qa-search" type="search" maxlength="120" placeholder="搜索比赛、问题或答复" aria-label="搜索已回复的问题"></label>
+          <p id="qa-status" class="meta" role="status"></p>
+          <div id="qa-list"></div>
+          <button id="qa-more" class="qa-secondary" type="button" hidden>查看更多</button>
+          <button id="qa-retry" class="qa-secondary" type="button" hidden>重新加载</button>
+        </section>
+        <section class="qa-compose" aria-labelledby="ask-title">
+          <h3 id="ask-title">向橙橙成提问</h3>
+          <form id="qa-form">
+            <label>相关比赛（选填）<input name="topic" maxlength="100" placeholder="例如：全国大学生数学建模竞赛"></label>
+            <label>你的问题<textarea name="question" rows="4" minlength="4" maxlength="600" required placeholder="写下你在选赛、报名或组队时遇到的问题"></textarea></label>
+            <input name="website" type="text" tabindex="-1" autocomplete="off" hidden aria-hidden="true">
+            <p class="meta">无需登录。站主回复后，问题和答复会公开展示。请勿填写手机号、学号等个人信息。</p>
+            <button class="qa-primary" type="submit">匿名提交</button>
+          </form>
+          <p id="qa-feedback" role="status"></p>
+          <button id="qa-withdraw" class="qa-secondary" type="button" hidden>撤回上次提问</button>
+        </section>
+      </div>
+    </section>
     <noscript>请启用 JavaScript 查看比赛目录。</noscript>
     <footer><span>报名月份参考往年安排，实际日期及加分规则以当年官方通知为准。</span>
       <a href="https://github.com/XinQijj/ContestAggregation">初始目录来源</a></footer>

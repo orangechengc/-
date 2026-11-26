@@ -1,3 +1,5 @@
+import { showQuestions } from "./questions.js";
+
 const get = id => document.getElementById(id);
 const make = (tag, text, className) => {
   const el = document.createElement(tag);
@@ -98,16 +100,22 @@ function group(title, records, cardFor) {
   get("results").append(section);
 }
 function view() {
-  return ["timeline", "hackathons"].includes(location.hash.slice(1)) ? location.hash.slice(1) : "catalog";
+  return ["timeline", "hackathons", "questions"].includes(location.hash.slice(1)) ? location.hash.slice(1) : "catalog";
 }
 function draw() {
-  if (!catalog || !activity) return;
   const route = view();
   const hackathons = route === "hackathons";
   document.querySelectorAll("[data-view]").forEach(a => {
     if (a.dataset.view === route) a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
   });
+  get("browse").hidden = route === "questions";
+  get("questions").hidden = route !== "questions";
+  if (route === "questions") {
+    showQuestions();
+    return;
+  }
+  if (!catalog || !activity) return;
   get("tier-control").hidden = get("robot-control").hidden = hackathons;
   get("query").placeholder = hackathons ? "搜索活动或主办方" : "搜索比赛、院系或编号";
   const q = get("query").value.trim().toLowerCase();
@@ -146,6 +154,7 @@ async function readData(path) {
 }
 async function start() {
   drawCalendar();
+  draw();
   try {
     [catalog,activity] = await Promise.all([readData("catalog.json"), readData("activity.json")]);
     for (const [n, label] of [[catalog.contests.length, "项竞赛"], [activity.hackathons.length, "场近期黑客松"]]) {
@@ -153,7 +162,7 @@ async function start() {
       total.append(make("strong", n), label);
       get("totals").append(total);
     }
-    draw();
+    if (view() !== "questions") draw();
   } catch {
     get("status").textContent = "目录加载失败，请检查网络后刷新。";
   }

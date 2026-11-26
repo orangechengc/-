@@ -22,3 +22,9 @@ python3 -m http.server 8770 --bind 127.0.0.1 --directory web
 在公开仓库的 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**，并将代码提交到 `main`。推送会发布 `web/`。如需手动同步并发布，在 **Actions → 更新并发布赛历 → Run workflow** 运行工作流。
 
 工作流配置在 `.github/workflows/pages.yml`，定于北京时间每天 04:17 更新。同步任务需要向 `main` 写入数据的权限。已发布网址会显示在成功运行的 `publish` 任务下方。
+
+## 咨询问答
+
+访客在 [咨询问答](https://orangechengc.github.io/-/#questions) 直接匿名提问，回复前只有站主可查看。在同一浏览器标签页可撤回最后一次尚待处理的问题。站主点「站主回复入口」，使用创建咨询服务的 ChatGPT 账号登录，在「待答」填写回复并公开。已公开条目可修改或归档，访客可按比赛名、问题或答复搜索。
+
+页面在 GitHub Pages 上运行，咨询数据存放在独立的 Sites 服务及其 D1 数据库。服务源码在 `consultation-service/`。站主邮箱和限流盐值保存在服务端环境变量中。更新网页按原 Pages 流程发布，后端和数据库迁移通过该服务的 Sites 发布流程部署。

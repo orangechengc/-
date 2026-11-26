@@ -150,3 +150,32 @@ footer { border-top: 1px solid var(--line); padding: 18px 0 32px; display: flex;
   .search { flex-basis: 100%; }
   .grid { gap: 10px; }
 }
+
+#questions { margin: 26px 0 36px; }
+.qa-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 20px; }
+.qa-heading h2, .qa-columns h3 { margin: 0 0 6px; }
+.qa-heading p { margin: 0; color: var(--muted); }
+.qa-heading a { flex: none; }
+.qa-columns { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.qa-compose, .qa-archive { min-width: 0; border: 1px solid var(--line); padding: clamp(16px, 2.4vw, 26px); border-radius: 14px; background: #fff; }
+.qa-compose { background: #fff8ea; border-color: #ebd1ad; }
+.qa-columns h3 { font-size: 1.15rem; margin-bottom: 14px; }
+#qa-form label { display: block; margin: 12px 0; font-weight: 600; }
+#qa-form input:not([hidden]), #qa-form textarea { display: block; width: 100%; border: 1px solid #c9c6b7; background: white; padding: 10px; margin-top: 5px; border-radius: 8px; color: var(--ink); font: inherit; font-weight: 400; }
+#qa-form textarea { resize: vertical; }
+.qa-primary, .qa-secondary { padding: 8px 14px; border: 1px solid var(--leaf); border-radius: 7px; }
+.qa-primary { color: white; background: var(--leaf); }
+.qa-secondary { color: var(--leaf); background: white; }
+.qa-columns button:disabled { opacity: .6; cursor: wait; }
+#qa-feedback { font-size: .9rem; color: var(--ink); }
+#qa-feedback:empty { margin: 0; }
+.qa-item { border-top: 1px solid var(--line); padding: 12px 0; overflow-wrap: anywhere; }
+.qa-item summary { cursor: pointer; }
+.qa-topic { display: inline-block; padding: 2px 7px; margin: 0 7px 4px 0; color: #87451c; background: #fff0db; border-radius: 5px; font-size: .85rem; }
+.qa-answer { padding: 12px 14px; margin-top: 10px; background: #f2f6ed; border-radius: 8px; }
+.qa-answer b, .qa-answer small { color: var(--leaf); }
+.qa-answer p { white-space: pre-wrap; line-height: 1.65; margin: 7px 0; }
+@media(max-width: 720px) {
+  .qa-columns { grid-template-columns: minmax(0,1fr); }
+  #questions { margin-top: 20px; }
+}
