@@ -33,9 +33,7 @@ function button(label, cls="qa-secondary") {
 function questionItem(row) {
   const item = document.createElement("article");
   item.className = "qa-item";
-  const header = textElement("div","", "qa-byline");
-  if (row.topic) header.append(textElement("span",row.topic,"qa-topic"));
-  header.append(textElement("span","访客 · " + row.created.slice(0,10)));
+  const header = textElement("div","访客 · " + row.created.slice(0,10),"qa-byline");
   item.append(header, textElement("p",row.question,"qa-message"));
   if (row.answer) {
     const owner = textElement("div","","qa-answer");
