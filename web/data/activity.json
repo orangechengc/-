@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T21:13:46+00:00",
+  "updated": "2026-11-27T21:16:06+00:00",
   "hackathons": [
     {
       "name": "Kiroween 2026",
@@ -98,14 +98,6 @@
       "state": "open"
     },
     {
-      "name": "Code for Humanity",
-      "url": "https://code-for-humanity.devpost.com/",
-      "org": "nill",
-      "location": "Online",
-      "dates": "Jul 16, 2026 - Jan 15, 2027",
-      "state": "open"
-    },
-    {
       "name": "Relate by Neo4j Hackathon",
       "url": "https://relate.devpost.com/",
       "org": "Neo4j",
@@ -114,19 +106,19 @@
       "state": "open"
     },
     {
+      "name": "Code for Humanity",
+      "url": "https://code-for-humanity.devpost.com/",
+      "org": "nill",
+      "location": "Online",
+      "dates": "Jul 16, 2026 - Jan 15, 2027",
+      "state": "open"
+    },
+    {
       "name": "Build Your First AI App",
       "url": "https://build-your-first-ai-app.devpost.com/",
       "org": "Yasir Insights",
       "location": "Online",
       "dates": "Oct 27 - Dec 09, 2026",
-      "state": "open"
-    },
-    {
-      "name": "STEM2Connect AI Hackathon",
-      "url": "https://stem2connect-online-hackathon.devpost.com/",
-      "org": "STEM2Connect",
-      "location": "Online",
-      "dates": "Oct 17 - Nov 29, 2026",
       "state": "open"
     },
     {
@@ -143,6 +135,14 @@
       "org": "cite & slayy",
       "location": "Online",
       "dates": "Nov 07 - Dec 07, 2026",
+      "state": "open"
+    },
+    {
+      "name": "STEM2Connect AI Hackathon",
+      "url": "https://stem2connect-online-hackathon.devpost.com/",
+      "org": "STEM2Connect",
+      "location": "Online",
+      "dates": "Oct 17 - Nov 29, 2026",
       "state": "open"
     }
   ],
@@ -175,7 +175,7 @@
       {
         "name": "zichuan-liu/WHUT_CUMCM20",
         "url": "https://github.com/zichuan-liu/WHUT_CUMCM20",
-        "stars": 173
+        "stars": 174
       },
       {
         "name": "seanys/CUMCM2020-Desert-Game",
@@ -243,12 +243,12 @@
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26600
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -258,36 +258,36 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "1-22": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26600
+        "stars": 26635
       }
     ],
     "1-23": [
       {
         "name": "fighting41love/funNLP",
         "url": "https://github.com/fighting41love/funNLP",
-        "stars": 84792
+        "stars": 84799
       },
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26600
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -297,7 +297,7 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       }
     ],
     "1-24": [],
@@ -316,17 +316,17 @@
       {
         "name": "fighting41love/funNLP",
         "url": "https://github.com/fighting41love/funNLP",
-        "stars": 84792
+        "stars": 84799
       },
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26600
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -336,24 +336,24 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       }
     ],
     "1-31": [
       {
         "name": "fighting41love/funNLP",
         "url": "https://github.com/fighting41love/funNLP",
-        "stars": 84792
+        "stars": 84799
       },
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26600
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -363,21 +363,21 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       }
     ],
     "1-32": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26600
+        "stars": 26635
       }
     ],
     "2-1": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26600
+        "stars": 26635
       },
       {
         "name": "cirosantilli/x86-bare-metal-examples",
@@ -387,7 +387,7 @@
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -397,26 +397,26 @@
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-2": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26600
+        "stars": 26635
       }
     ],
     "2-3": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26600
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -426,19 +426,19 @@
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       },
       {
         "name": "mRFWq7LwNPZjaVv5v6eo/cihna-dictattorshrip-8",
         "url": "https://github.com/mRFWq7LwNPZjaVv5v6eo/cihna-dictattorshrip-8",
-        "stars": 220
+        "stars": 221
       }
     ],
     "2-4": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26600
+        "stars": 26635
       }
     ],
     "2-5": [],
@@ -452,12 +452,12 @@
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -467,12 +467,12 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-13": [],
@@ -482,17 +482,17 @@
       {
         "name": "fighting41love/funNLP",
         "url": "https://github.com/fighting41love/funNLP",
-        "stars": 84792
+        "stars": 84799
       },
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -502,7 +502,7 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       }
     ],
     "2-17": [],
@@ -513,12 +513,12 @@
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -528,12 +528,12 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-22": [],
@@ -541,7 +541,7 @@
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/x86-bare-metal-examples",
@@ -551,7 +551,7 @@
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -561,7 +561,7 @@
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-24": [],
@@ -601,17 +601,17 @@
       {
         "name": "fighting41love/funNLP",
         "url": "https://github.com/fighting41love/funNLP",
-        "stars": 84792
+        "stars": 84799
       },
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -621,7 +621,7 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       }
     ],
     "2-32": [],
@@ -629,12 +629,12 @@
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -644,36 +644,36 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-34": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       }
     ],
     "2-35": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -683,24 +683,24 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-36": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -710,12 +710,12 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-37": [],
@@ -726,12 +726,12 @@
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -741,29 +741,29 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-42": [
       {
         "name": "fighting41love/funNLP",
         "url": "https://github.com/fighting41love/funNLP",
-        "stars": 84792
+        "stars": 84799
       },
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -773,7 +773,7 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       }
     ],
     "2-43": [
@@ -809,7 +809,7 @@
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/x86-bare-metal-examples",
@@ -819,29 +819,29 @@
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-47": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -851,24 +851,24 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-48": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -878,24 +878,24 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-49": [
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -905,12 +905,12 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-50": [],
@@ -927,17 +927,17 @@
       {
         "name": "fighting41love/funNLP",
         "url": "https://github.com/fighting41love/funNLP",
-        "stars": 84792
+        "stars": 84799
       },
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -947,7 +947,7 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       }
     ],
     "2-55": [],
@@ -957,12 +957,12 @@
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       }
     ],
     "2-59": [],
@@ -970,12 +970,12 @@
       {
         "name": "Dujltqzv/Some-Many-Books",
         "url": "https://github.com/Dujltqzv/Some-Many-Books",
-        "stars": 26601
+        "stars": 26635
       },
       {
         "name": "cirosantilli/china-dictatorship",
         "url": "https://github.com/cirosantilli/china-dictatorship",
-        "stars": 3378
+        "stars": 3381
       },
       {
         "name": "gege-circle/.github",
@@ -985,12 +985,12 @@
       {
         "name": "pxvr-official/1",
         "url": "https://github.com/pxvr-official/1",
-        "stars": 569
+        "stars": 570
       },
       {
         "name": "cirosantilli/china-dictatroship-7",
         "url": "https://github.com/cirosantilli/china-dictatroship-7",
-        "stars": 397
+        "stars": 398
       }
     ],
     "2-61": [],
